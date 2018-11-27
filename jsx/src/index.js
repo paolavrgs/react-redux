@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 
 const App = () => {
+  const buttonText = 'Click me!'
   return (
     <div>
       <h1 style={{ color: '#f33466' }}>Paola's new app</h1>
-      <label>Enter name:</label>
-      <input type='text'/>
-      <button>Submit</button>
+      <label htmlFor='name'>Enter name:</label>
+      <input id='name' type='text'/>
+      <button>{buttonText}</button>
     </div>
   )
 }
 
 ReactDOM.render(<App/>, document.getElementById('root'))
+
