@@ -16,7 +16,6 @@ export default class SearchBar extends React.Component {
             <input type="text" value={this.state.term} onChange={ev => this.setState({term: ev.target.value}) }/>
           </div>
         </form>
-        <h1>{this.state.term}</h1>
       </div>
     );
   }
